@@ -22,5 +22,11 @@ pipeline {
             echo "Always running"
             cleanWs()
         }
+        success {
+            echo "if success it runs"
+        }
+        failure {
+            echo "if fails it runs"
+        }
     }
 }
