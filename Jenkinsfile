@@ -20,6 +20,7 @@ pipeline {
     post {
         always {
             echo "Always running"
+            cleanWs()
         }
     }
 }
